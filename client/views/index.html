@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="App">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,17 @@
 
 <body>
   <div ng-controller="UserCtrl">
-    <p>{{userCount}}</p>
+    <h1>There are {{users.length}} users</h1>
+    <ul>
+      <li ng-repeat="user in users track by $index">
+        {{user.name}}
+      </li>
+    </ul>
+
+    <form ng-submit="createUser()">
+      <input type="text" ng-model="userName" />
+      <button type="submit">Submit</button>
+    </form>
   </div>
   <script src="/bower/angular/angular.min.js"></script>
   <script src="/bower/angular-resource/angular-resource.min.js"></script>
