@@ -1,0 +1,16 @@
+{
+  "name": "simple-mean",
+  "version": "0.0.0",
+  "authors": [
+    "Tanveer Hassan <tanveer_hassan@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ]
+}
